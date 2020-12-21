@@ -4,11 +4,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1D0AFD5A-6194-4A5C-9601-0E043AED4B08}</ProjectGuid>
+    <ProjectGuid>{D95F226E-2362-44D4-9790-3C186C2246EB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Code_Saniataire</RootNamespace>
-    <AssemblyName>Code_Saniataire</AssemblyName>
+    <RootNamespace>COVID_19</RootNamespace>
+    <AssemblyName>COVID_19</AssemblyName>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
@@ -41,10 +41,10 @@
     <Compile Include="Citoyen.cs" />
     <Compile Include="Etranger.cs" />
     <Compile Include="Depistage.cs" />
-    <Compile Include="Lieuvisite.cs" />
+    <Compile Include="Lieu.cs" />
     <Compile Include="CodeQR.cs" />
     <Compile Include="Consultationenligne.cs" />
-    <Compile Include="Vacciner.cs" />
+    <Compile Include="Vaccine.cs" />
     <Compile Include="Coordonnees.cs" />
     <Compile Include="Couleur.cs" />
     <Compile Include="Sexe.cs" />

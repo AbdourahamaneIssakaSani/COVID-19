@@ -16,6 +16,6 @@ public class Coordonnees
       throw new NotImplementedException();
    }
    
-   public Lieuvisite lieuvisite;
+   public Lieu lieu;
 
 }

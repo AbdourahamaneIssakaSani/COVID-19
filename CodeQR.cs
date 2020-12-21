@@ -24,6 +24,6 @@ public class CodeQR
       throw new NotImplementedException();
    }
    
-   public Vacciner[] Association12;
+   public Vaccine[] Association12;
 
 }

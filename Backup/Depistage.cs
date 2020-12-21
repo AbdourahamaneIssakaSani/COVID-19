@@ -8,7 +8,6 @@ using System;
 public class Depistage
 {
    private string nomTest;
-   private string lieuTest;
    private DateTime dateTest;
    
    public bool Resultats()
@@ -77,5 +76,6 @@ public class Depistage
       if (codeQR != null)
          codeQR.Clear();
    }
+   public Lieu lieu;
 
 }

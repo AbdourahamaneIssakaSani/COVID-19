@@ -9,7 +9,6 @@ using System;
 public class Consultationenligne
 {
    private DateTime date;
-   private Coordonnees lieu;
    private string rapport;
    
    public string Avancement()
@@ -17,6 +16,6 @@ public class Consultationenligne
       throw new NotImplementedException();
    }
    
-   public Vacciner[] Association12;
+   public Vaccine[] Association12;
 
 }

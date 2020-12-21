@@ -1,14 +1,13 @@
-// File:    Lieuvisite.cs
+// File:    Lieu.cs
 // Author:  Gaming VivoBook Pro
 // Created: jeudi 3 décembre 2020 17:30:03
-// Purpose: Definition of Class Lieuvisite
+// Purpose: Definition of Class Lieu
 
 using System;
 
 /// un lieu visité est défini par des coordonées, dès qu’il bouge on enregistre les anciennes coordonnées comme lieu visité
-public class Lieuvisite
+public class Lieu
 {
-   private Coordonnees coordonnees;
    private DateTime date;
    private DateTime heure;
    private TimeSpan duree;

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 // set of fields. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("Code Saniataire")]
+[assembly: AssemblyTitle("COVID-19")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("")]
@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(true)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("B3CC3A9D-2C3F-442E-8FEB-BF098AE972A0")]
+[assembly: Guid("E1F78C67-90EB-4665-9FEA-66B3C9CDE634")]
 
 //
 // Version information for an assembly consists of the following four values:
