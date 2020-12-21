@@ -1,0 +1,6 @@
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\Code_Saniataire.csprojAssemblyReference.cache
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\Code_Saniataire.csproj.CoreCompileInputs.cache
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\bin\Debug\Code_Saniataire.dll
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\bin\Debug\Code_Saniataire.pdb
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\Code_Saniataire.dll
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\Code_Saniataire.pdb
