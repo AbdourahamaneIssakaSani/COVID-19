@@ -4,6 +4,7 @@
 // Purpose: Definition of Class CodeQR
 
 using System;
+using COVID_19;
 
 /// il obtient un code QR après un test de dépistage sinon en fonction de ses déplacements, c’est-à-dire s’il a partagé les mêmes coordonnées qu’un malade au même moment ou selon certaines conditions définie par les autorités sanitaires.
 /// Le code QR contient les informations suivantes :
@@ -13,17 +14,33 @@ using System;
 /// --- en observation
 public class CodeQR
 {
-   private int id;
-   private Couleur couleur;
-   private DateTime date;
-   private string etat;
-   private string details;
-   
-   public Couleur Etat()
-   {
-      throw new NotImplementedException();
-   }
-   
-   public Vaccine[] Association12;
+    private static int id = 1000;
+    private Couleur couleur;
+    private DateTime date;
+    //private string etat;
+    private string details;
+    
+    public CodeQR()
+    {
+        couleur = Couleur.vert;
+        date = DateTime.Now;
+        CodeQR.id++;
+    }
+    public Couleur Etat
+    {
+        get { return couleur; }
+        set { couleur = value; }
+    }
+    public DateTime dateEmission
+    {
+        get { return date; }
+        set { date = value; }
+    }
+    public string Details
+    {
+        get { return details; }
+        set { details = value; }
+    }
+   // public Vaccine[] Association12;
 
 }

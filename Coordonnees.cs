@@ -4,18 +4,21 @@
 // Purpose: Definition of Class Coordonnees
 
 using System;
+using System.Device.Location;
 
 /// ses coordonnées en temps réel, pour sa localisation
 public class Coordonnees
 {
-   private string latitude;
-   private string longitude;
+    //GeoCoordinateWatcher coord = new GeoCoordinateWatcher();
+
+    private string latitude;
+    private string longitude;
    
-   public int Localisation()
-   {
-      throw new NotImplementedException();
-   }
+    public int Localisation()
+    {
+        throw new NotImplementedException();
+    }
    
-   public Lieu lieu;
+   // public Lieu lieu;
 
 }

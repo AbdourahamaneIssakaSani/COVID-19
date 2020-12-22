@@ -13,10 +13,10 @@ public class Vaccine
    private string details;
    private bool estVaccine;
    
-   public bool Vaccine()
+   /*public bool Vaccine()
    {
       throw new NotImplementedException();
-   }
+   }*/
    
    public CodeQR codeQRA;
    public Consultationenligne consultationenligneB;

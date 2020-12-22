@@ -5,6 +5,7 @@
 
 using System;
 
+
 public class Personne
 {
    private string nom;
@@ -12,10 +13,37 @@ public class Personne
    private int age;
    private Sexe sexe;
    private string residence;
+    
+    public string Nom
+    {
+        get { return nom; }
+        set { nom = value; }
+    }
+    public string Prenom
+    {
+        get { return prenom; }
+        set { prenom = value; }
+    }
+    public int Age
+    {
+        get { return age; }
+        set { age = value; }
+    }
+    public Sexe Genre
+    {
+        get { return sexe; }
+        set { sexe = value; }
+    }
+    public string Residence
+    {
+        get { return residence; }
+        set { residence = value; }
+    }
    
-   public string Adresse()
+   /* Adresse déjà fournie par les setters de adresse
+    * public string Adresse()
    {
-      throw new NotImplementedException();
-   }
+      return;
+   }*/
 
 }
