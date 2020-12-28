@@ -15,8 +15,14 @@ namespace COVID_19
             Ali.Age = 23;
             Ali.Genre = Sexe.masclin;
             Ali.Residence = "State, Fès 20000";
-
-            Console.WriteLine(Ali.Nom.ToUpper() + "\t" + Ali.Prenom);
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine("============Civilité============");
+            Console.WriteLine("Nom et Prénom:"+ Ali.Nom.ToUpper() +" " + Ali.Prenom);           
+            Console.WriteLine("Sexe:" + Ali.Genre);
+            Console.WriteLine("Age:" + Ali.Age);
+            Console.WriteLine("Adresse:"+ Ali.Residence);
+            Console.WriteLine("============Etat sanitaire============");
+            Console.WriteLine("Depistage:"+ Ali.Depistage.ElementAt<Depistage>(0));
         }
     }
 }

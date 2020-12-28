@@ -1,6 +1,6 @@
 C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\COVID_19.csprojAssemblyReference.cache
 C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\COVID_19.csproj.CoreCompileInputs.cache
-C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\bin\Debug\COVID_19.dll
 C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\bin\Debug\COVID_19.pdb
-C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\COVID_19.dll
 C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\COVID_19.pdb
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\bin\Debug\COVID_19.exe
+C:\Users\Gaming VivoBook Pro\source\repos\Abdourahamane709\COVID-19\obj\Debug\COVID_19.exe
