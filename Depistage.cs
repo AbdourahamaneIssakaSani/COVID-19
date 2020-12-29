@@ -12,13 +12,18 @@ public class Depistage
     private string nomTest;
     private DateTime dateTest;
     private bool positif;
-
+    private Lieu lieu;
     public Depistage()
     {
         nomTest = "PCR";
         dateTest = DateTime.Now;
         positif = false;
+        lieu = new Lieu();
 
+    }
+    public Lieu Endroit
+    {
+        get { return lieu; }
     }
     public DateTime Date
     {
@@ -98,6 +103,6 @@ public class Depistage
         if (codeQR != null)
             codeQR.Clear();
     }
-   // public Lieu lieu;
+    
 
 }

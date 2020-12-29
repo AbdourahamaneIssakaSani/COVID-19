@@ -4,20 +4,23 @@
 // Purpose: Definition of Class Lieu
 
 using System;
+using System.Collections.Generic;
 using System.Device.Location;
 
 /// un lieu visité est défini par des coordonées, dès qu’il bouge on enregistre les anciennes coordonnées comme lieu visité
 public class Lieu
 {
-    private GeoCoordinateWatcher coordonnees = new GeoCoordinateWatcher();
-    private DateTime date = new DateTime();
-    private DateTime heure;
-    private TimeSpan duree;
+    private GeoCoordinateWatcher coordonnees;
+    private DateTime date;
+    private TimeSpan heure;
+    //private int duree;
     
     public Lieu()
-    {
+    {       
+        coordonnees = new GeoCoordinateWatcher(); 
         coordonnees.Start();
-        date = DateTime.Now;
+        date = DateTime.Now.Date;
+        heure = DateTime.Now.TimeOfDay;        
     }
     public GeoCoordinateWatcher Localisation()
     {
@@ -28,13 +31,13 @@ public class Lieu
         throw new NotImplementedException();
     }
    
-    public System.Collections.Generic.List<CodeQR> codeQR;
+    public List<CodeQR> codeQR;
    
     /// <summary>
     /// Property for collection of CodeQR
     /// </summary>
     /// <pdGenerated>Default opposite class collection property</pdGenerated>
-    public System.Collections.Generic.List<CodeQR> CodeQR
+    public List<CodeQR> CodeQR
     {
         get
         {
@@ -62,7 +65,7 @@ public class Lieu
         if (newCodeQR == null)
             return;
         if (this.codeQR == null)
-            this.codeQR = new System.Collections.Generic.List<CodeQR>();
+            this.codeQR = new List<CodeQR>();
         if (!this.codeQR.Contains(newCodeQR))
             this.codeQR.Add(newCodeQR);
     }

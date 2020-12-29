@@ -30,7 +30,8 @@ namespace COVID_19
             Console.WriteLine("Adresse:"+ Ali.Residence);
             Console.WriteLine("============Dépistage============");
             Console.WriteLine("Nom du test:" + Ali.Depistage.ElementAt<Depistage>(0).Test);
-            Console.WriteLine("Date:" + Ali.Depistage.ElementAt<Depistage>(0).Date);
+            Console.WriteLine("Date:" + Ali.Depistage.ElementAt<Depistage>(0).Date.Date);
+            Console.WriteLine("Fait à:" + Ali.Depistage.ElementAt<Depistage>(0).Endroit.Localisation().Position.Location);
             Console.WriteLine("Atteint du COVID-19:" + Ali.Depistage.ElementAt<Depistage>(0).Positif);
             Console.WriteLine("============CodeQR============");
             Console.WriteLine("ID :"+code.ID);
