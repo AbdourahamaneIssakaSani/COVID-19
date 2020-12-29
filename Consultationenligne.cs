@@ -8,14 +8,26 @@ using System;
 /// en fonction de son code QR il fait des consultation en ligne ou pas
 public class Consultationenligne
 {
-   private DateTime date;
-   private string rapport;
-   
-   public string Avancement()
-   {
-      throw new NotImplementedException();
-   }
-   
-   public Vaccine[] Association12;
+    private DateTime date;
+    private string rapport;
+    
+    public Consultationenligne()
+    {
+        date = DateTime.Now;
+        rapport = "";
+    }
+    public string Avancement()
+    {
+        return rapport;
+    }
+    public string Rapport
+    {
+        set { rapport = value; }
+    }
+    public DateTime Date
+    {
+        get { return date; }
+    }
+   //public Vaccine[] Association12;
 
 }
