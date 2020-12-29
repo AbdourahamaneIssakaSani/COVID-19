@@ -4,6 +4,7 @@
 // Purpose: Definition of Class Citoyen
 
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using COVID_19;
 
@@ -12,10 +13,10 @@ public class Citoyen : Personne
 {
     private DateTime derniereDateVoyage;
 
-    public DateTime Voyage
+    public DateTime DateVoyage
     {
-        get;
-        set;
+        get { return derniereDateVoyage; }
+        set { derniereDateVoyage = value; }
     }
    
     public bool AVoyage()
@@ -94,7 +95,7 @@ public class Citoyen : Personne
             coordonnees.Clear();
     }*/
     
-    public System.Collections.Generic.List<Depistage> depistage;
+    private List<Depistage> depistage;
    
     /// <summary>
     /// Property for collection of Depistage
@@ -128,7 +129,7 @@ public class Citoyen : Personne
         if (newDepistage == null)
             return;
         if (this.depistage == null)
-            this.depistage = new System.Collections.Generic.List<Depistage>();
+            this.depistage = new List<Depistage>();
         if (!this.depistage.Contains(newDepistage))
             this.depistage.Add(newDepistage);
     }

@@ -4,17 +4,21 @@
 // Purpose: Definition of Class Depistage
 
 using System;
+using System.Linq;
 using System.Collections.Generic;
 
 public class Depistage
 {
     private string nomTest;
     private DateTime dateTest;
-    private bool positif = false;
+    private bool positif;
 
     public Depistage()
     {
+        nomTest = "PCR";
         dateTest = DateTime.Now;
+        positif = false;
+
     }
     public DateTime Date
     {
@@ -94,6 +98,6 @@ public class Depistage
         if (codeQR != null)
             codeQR.Clear();
     }
-    public Lieu lieu;
+   // public Lieu lieu;
 
 }

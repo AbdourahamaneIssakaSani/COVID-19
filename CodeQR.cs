@@ -24,7 +24,12 @@ public class CodeQR
     {
         couleur = Couleur.vert;
         date = DateTime.Now;
+        details = "";
         CodeQR.id++;
+    }
+    public int ID
+    {
+        get { return id; }
     }
     public Couleur Etat
     {
