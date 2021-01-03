@@ -27,6 +27,13 @@ public class CodeQR
         details = "";
         CodeQR.id++;
     }
+    public CodeQR(CodeQR code)
+    {
+        CodeQR.id = code.ID;
+        couleur = code.Etat;
+        date = code.dateEmission;
+        details = code.Details;
+    }
     public int ID
     {
         get { return id; }
@@ -46,6 +53,6 @@ public class CodeQR
         get { return details; }
         set { details = value; }
     }
-   // public Vaccine[] Association12;
+    public Traitement[] traitements;
 
 }

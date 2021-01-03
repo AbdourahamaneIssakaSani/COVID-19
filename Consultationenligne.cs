@@ -16,6 +16,11 @@ public class Consultationenligne
         date = DateTime.Now;
         rapport = "Rien à signaler";
     }
+    public Consultationenligne(Consultationenligne consultation)
+    {
+        date = consultation.Date;
+        rapport = consultation.Avancement();
+    }
     public string Avancement()
     {
         return rapport;
@@ -28,6 +33,6 @@ public class Consultationenligne
     {
         get { return date; }
     }
-   //public Vaccine[] Association12;
+    public Traitement[] traitements;
 
 }
