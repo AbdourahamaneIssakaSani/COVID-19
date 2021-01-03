@@ -12,6 +12,12 @@ public class Traitement
     private string details;
     private bool vaccine;
     
+    public Traitement()
+    {
+        details = "R.A.S";
+        vaccine = false;
+        date = DateTime.Now.Date;
+    }
     public DateTime DateOrdonnance
     {
         set { date = value; }
