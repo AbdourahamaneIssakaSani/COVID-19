@@ -18,7 +18,11 @@ public class Citoyen : Personne
         get { return derniereDateVoyage; }
         set { derniereDateVoyage = value; }
     }
-   
+    
+    public Citoyen()
+    {
+        Identifiant = "Inconnu";
+    }
     public bool AVoyage()
     {
         //teste s’il a voyagé dans les 10 derniers jours au moins
@@ -32,28 +36,38 @@ public class Citoyen : Personne
         }
         //throw new NotImplementedException();
     }
-   
-    /*public System.Collections.Generic.List<Coordonnees> coordonnees;
+    public bool Avisite(Lieu CeLieu)
+    {
+        if (lieuVisite.Contains(CeLieu))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public List<Lieu> lieuVisite;
    
     /// <summary>
     /// Property for collection of Coordonnees
     /// </summary>
     /// <pdGenerated>Default opposite class collection property</pdGenerated>
-    public System.Collections.Generic.List<Coordonnees> Coordonnees
+    public List<Lieu> LieuVisite
     {
         get
         {
-            if (coordonnees == null)
-            coordonnees = new System.Collections.Generic.List<Coordonnees>();
-            return coordonnees;
+            if (lieuVisite == null)
+                lieuVisite = new List<Lieu>();
+            return lieuVisite;
         }
         set
         {
-            RemoveAllCoordonnees();
+            RemoveAllLieuVisite();
             if (value != null)
             {
-            foreach (Coordonnees oCoordonnees in value)
-                AddCoordonnees(oCoordonnees);
+            foreach (Lieu oLieuVisite in value)
+                AddLieuVisite(oLieuVisite);
             }
         }
     }
@@ -62,38 +76,38 @@ public class Citoyen : Personne
     /// Add a new Coordonnees in the collection
     /// </summary>
     /// <pdGenerated>Default Add</pdGenerated>
-    public void AddCoordonnees(Coordonnees newCoordonnees)
+    public void AddLieuVisite(Lieu newLieuVisite)
     {
-        if (newCoordonnees == null)
+        if (newLieuVisite == null)
             return;
-        if (this.coordonnees == null)
-            this.coordonnees = new System.Collections.Generic.List<Coordonnees>();
-        if (!this.coordonnees.Contains(newCoordonnees))
-            this.coordonnees.Add(newCoordonnees);
+        if (this.lieuVisite == null)
+            this.lieuVisite = new List<Lieu>();
+        if (!this.lieuVisite.Contains(newLieuVisite))
+            this.lieuVisite.Add(newLieuVisite);
     }
    
     /// <summary>
     /// Remove an existing Coordonnees from the collection
     /// </summary>
     /// <pdGenerated>Default Remove</pdGenerated>
-    public void RemoveCoordonnees(Coordonnees oldCoordonnees)
+    public void RemoveLieuVisite(Lieu oldLieuVisite)
     {
-        if (oldCoordonnees == null)
+        if (oldLieuVisite == null)
             return;
-        if (this.coordonnees != null)
-            if (this.coordonnees.Contains(oldCoordonnees))
-            this.coordonnees.Remove(oldCoordonnees);
+        if (this.lieuVisite != null)
+            if (this.lieuVisite.Contains(oldLieuVisite))
+            this.lieuVisite.Remove(oldLieuVisite);
     }
    
     /// <summary>
     /// Remove all instances of Coordonnees from the collection
     /// </summary>
     /// <pdGenerated>Default removeAll</pdGenerated>
-    public void RemoveAllCoordonnees()
+    public void RemoveAllLieuVisite()
     {
-        if (coordonnees != null)
-            coordonnees.Clear();
-    }*/
+        if (lieuVisite != null)
+            lieuVisite.Clear();
+    }
     
     private List<Depistage> depistage;
    

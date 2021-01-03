@@ -26,11 +26,7 @@ public class Lieu
     {
         return coordonnees;
     }
-    public bool Avisite()
-    {
-        throw new NotImplementedException();
-    }
-   
+       
     public List<CodeQR> codeQR;
    
     /// <summary>

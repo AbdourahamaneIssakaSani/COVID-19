@@ -14,7 +14,7 @@ public class Consultationenligne
     public Consultationenligne()
     {
         date = DateTime.Now;
-        rapport = "";
+        rapport = "Rien à signaler";
     }
     public string Avancement()
     {

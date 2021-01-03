@@ -8,11 +8,12 @@ using System;
 
 public class Personne
 {
-   private string nom;
-   private string prenom;
-   private int age;
-   private Sexe sexe;
-   private string residence;
+    private string nom;
+    private string prenom;
+    private int age;
+    private Sexe sexe;
+    private string residence;
+    private static string identifiant;
     
     public string Nom
     {
@@ -38,6 +39,11 @@ public class Personne
     {
         get { return residence; }
         set { residence = value; }
+    }
+    public string Identifiant
+    {
+        set { identifiant = value; }
+        get { return identifiant; }
     }
    
    /* Adresse déjà fournie par les setters de adresse
