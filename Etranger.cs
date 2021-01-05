@@ -17,7 +17,20 @@ public class Etranger : Personne
         Identifiant = "Inconnu";
         nationalite = "Inconnue";
     }
-
+    public Etranger(Etranger etranger)
+    {
+        this.Identifiant = etranger.Identifiant;
+        this.Nom = etranger.Nom;
+        this.Prenom = etranger.Prenom;
+        this.Age = etranger.Age;
+        this.Genre = etranger.Genre;
+        this.Residence = etranger.Residence;
+        this.Nationalite = etranger.Nationalite;
+        this.DateArrivee = etranger.DateArrivee;
+        this.Provenance = etranger.Provenance;
+        this.LieuVisite = etranger.LieuVisite;
+        this.Depistage = etranger.Depistage;
+    }
     public string Nationalite
     {
         set { nationalite = value; }
