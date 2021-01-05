@@ -12,6 +12,7 @@ using COVID_19;
 public class Individu : Personne
 {
     private DateTime derniereDateVoyage;
+    private string autresDetails;
 
     public DateTime DateVoyage
     {
@@ -21,7 +22,8 @@ public class Individu : Personne
     
     public Individu()
     {
-        Identifiant = "Inconnu";
+        Identifiant = Guid.NewGuid().ToString("N").Substring(0, 8);
+        Nationalite = "";
     }
     public Individu(Individu individu)
     {
@@ -30,12 +32,13 @@ public class Individu : Personne
         this.Prenom = individu.Prenom;
         this.Age = individu.Age;
         this.Genre = individu.Genre;
+        this.Nationalite = individu.Nationalite;
         this.Residence = individu.Residence;
         this.DateVoyage = individu.DateVoyage;
         this.LieuVisite = individu.LieuVisite;
         this.Depistage = individu.Depistage;
     }
-    public bool AVoyage()
+    public bool AVoyageRecemment()
     {
         //teste s’il a voyagé dans les 14 derniers jours au moins
         if((DateTime.Now - derniereDateVoyage).TotalDays <= 14)
@@ -59,14 +62,22 @@ public class Individu : Personne
             return false;
         }
     }
-    public string Provenance()
+    public string AutresDetails
     {
-        throw new NotImplementedException();
+        get { return autresDetails; }
+        set { autresDetails = value; }
     }
 
     public bool EstEtranger()
     {
-        throw new NotImplementedException();
+        if(Nationalite != "marocaine")
+        {
+            return true;
+        }
+        else
+        {
+            return false; 
+        }
     }
 
     public List<Lieu> lieuVisite;

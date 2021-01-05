@@ -69,11 +69,11 @@ namespace COVID_19
             Console.WriteLine("Date:" + Visite.traitements[1].DateOrdonnance);
             Console.WriteLine("Prescription:" + Visite.traitements[1].Details);
             Console.WriteLine("Est-il vacciné:" + Visite.traitements[1].estVaccine);*/
-            
-            persistance AddAli = new persistance(Ali);
-            AddAli.Insert();
-            
 
+            //persistance AddAli = new persistance(Ali);
+            //AddAli.Insert();
+            //Console.WriteLine(Guid.NewGuid().ToString("N").Substring(0,8));
+            Console.WriteLine("Fait à:" + Ali.Depistage.ElementAt<Depistage>(0).Endroit.Localisation().Position.Location);
 
             Console.ReadLine();
         }

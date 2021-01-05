@@ -11,20 +11,15 @@ public class Depistage
 {
     private string nomTest;
     private DateTime dateTest;
-    private bool positif;
-    private Lieu lieu;
+    private bool positif;    
+    
     public Depistage()
     {
         nomTest = "PCR";
         dateTest = DateTime.Now;
-        positif = false;
-        lieu = new Lieu();
+        positif = false;        
 
-    }
-    public Lieu Endroit
-    {
-        get { return lieu; }
-    }
+    }    
     public DateTime Date
     {
         get { return dateTest; }

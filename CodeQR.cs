@@ -16,8 +16,7 @@ public class CodeQR
 {
     private static int id = 1000;
     private Couleur couleur;
-    private DateTime date;
-    //private string etat;
+    private DateTime date;    
     private string details;
     
     public CodeQR()
