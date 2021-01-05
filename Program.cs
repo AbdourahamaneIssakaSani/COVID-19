@@ -28,9 +28,9 @@ namespace COVID_19
             Visite.traitements[0].consultationenligneB = new Consultationenligne(Visite);
             Visite.traitements[0].Details = "Aucun traitement prescris";           
             Visite.traitements[0].estVaccine = false;
+            
 
-
-            /*Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("============Civilité============");
             Console.WriteLine("Nom:"+ Ali.Nom);           
             Console.WriteLine("Prénom:"+Ali.Prenom);           
@@ -68,13 +68,8 @@ namespace COVID_19
             Console.WriteLine("Code Patient :" + Visite.traitements[1].codeQRA.ID);
             Console.WriteLine("Date:" + Visite.traitements[1].DateOrdonnance);
             Console.WriteLine("Prescription:" + Visite.traitements[1].Details);
-            Console.WriteLine("Est-il vacciné:" + Visite.traitements[1].estVaccine);*/
+            Console.WriteLine("Est-il vacciné:" + Visite.traitements[1].estVaccine);
             
-            persistance AddAli = new persistance(Ali);
-            AddAli.Insert();
-            
-
-
             Console.ReadLine();
         }
     }
