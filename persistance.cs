@@ -8,7 +8,7 @@ namespace COVID_19
 {
     class persistance
     {
-        private Citoyen citoyen;
+        private Individu individu;
         //private Etranger etranger;
         /*private CodeQR codeQR;
         private Depistage depistage;
@@ -23,11 +23,11 @@ namespace COVID_19
 
         public persistance()
         {
-            citoyen = new Citoyen();
+            individu = new Individu();
         }
-        public persistance(Citoyen citoyen)
+        public persistance(Individu citoyen)
         {
-            this.citoyen = new Citoyen(citoyen);
+            this.individu = new Individu(citoyen);
         }
         /*public persistance(Etranger etranger)
         {
@@ -38,7 +38,7 @@ namespace COVID_19
         {
             Connection.Open();
             Command.Connection = Connection;
-            Command.CommandText = "INSERT INTO citoyen(identifiant, nom) VALUES('" + citoyen.Identifiant + "','" + citoyen.Nom + "')";
+            Command.CommandText = "INSERT INTO citoyen(identifiant, nom) VALUES('" + individu.Identifiant + "','" + individu.Nom + "')";
             Command.ExecuteNonQuery();
             Connection.Close();
         }

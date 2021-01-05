@@ -9,7 +9,7 @@ namespace COVID_19
     {
         static void Main()
         {           
-            Citoyen Ali = new Citoyen();
+            Individu Ali = new Individu();
             Ali.Nom = "Ali";
             Ali.Prenom = "Salissou";
             Ali.Age = 23;

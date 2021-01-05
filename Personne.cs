@@ -13,6 +13,7 @@ public class Personne
     private int age;
     private Sexe sexe;
     private string residence;
+    private string nationalite;
     private static string identifiant;
     
     public string Nom
@@ -39,6 +40,12 @@ public class Personne
     {
         get { return residence; }
         set { residence = value; }
+    }
+
+    public string Nationalite
+    {
+        get { return nationalite; }
+        set { nationalite = value; }
     }
     public string Identifiant
     {

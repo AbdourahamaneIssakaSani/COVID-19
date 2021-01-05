@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using COVID_19;
 
 /// il faut vérifier aussi s’il a voyagé dans les 2 semaines précédents la date actuelle, informations très impotante pour les agents de santé.
-public class Citoyen : Personne
+public class Individu : Personne
 {
     private DateTime derniereDateVoyage;
 
@@ -19,25 +19,25 @@ public class Citoyen : Personne
         set { derniereDateVoyage = value; }
     }
     
-    public Citoyen()
+    public Individu()
     {
         Identifiant = "Inconnu";
     }
-    public Citoyen(Citoyen citoyen)
+    public Individu(Individu individu)
     {
-        this.Identifiant = citoyen.Identifiant;
-        this.Nom = citoyen.Nom;
-        this.Prenom = citoyen.Prenom;
-        this.Age = citoyen.Age;
-        this.Genre = citoyen.Genre;
-        this.Residence = citoyen.Residence;
-        this.DateVoyage = citoyen.DateVoyage;
-        this.LieuVisite = citoyen.LieuVisite;
-        this.Depistage = citoyen.Depistage;
+        this.Identifiant = individu.Identifiant;
+        this.Nom = individu.Nom;
+        this.Prenom = individu.Prenom;
+        this.Age = individu.Age;
+        this.Genre = individu.Genre;
+        this.Residence = individu.Residence;
+        this.DateVoyage = individu.DateVoyage;
+        this.LieuVisite = individu.LieuVisite;
+        this.Depistage = individu.Depistage;
     }
     public bool AVoyage()
     {
-        //teste s’il a voyagé dans les 10 derniers jours au moins
+        //teste s’il a voyagé dans les 14 derniers jours au moins
         if((DateTime.Now - derniereDateVoyage).TotalDays <= 14)
         {
             return true;
@@ -59,6 +59,16 @@ public class Citoyen : Personne
             return false;
         }
     }
+    public string Provenance()
+    {
+        throw new NotImplementedException();
+    }
+
+    public bool EstEtranger()
+    {
+        throw new NotImplementedException();
+    }
+
     public List<Lieu> lieuVisite;
    
     /// <summary>
