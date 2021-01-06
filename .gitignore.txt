@@ -91,6 +91,7 @@ StyleCopReport.xml
 *.csproj
 *.suo
 *.csprojAssemblyReference.cache
+*.vs
 
 # Chutzpah Test files
 _Chutzpah*
