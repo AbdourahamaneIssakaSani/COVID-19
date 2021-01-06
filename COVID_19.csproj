@@ -42,15 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Citoyen.cs" />
     <Compile Include="Etranger.cs" />
     <Compile Include="Depistage.cs" />
     <Compile Include="Lieu.cs" />
     <Compile Include="CodeQR.cs" />
     <Compile Include="Consultationenligne.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Vaccine.cs" />
-    <Compile Include="Coordonnees.cs" />
     <Compile Include="Couleur.cs" />
     <Compile Include="Sexe.cs" />
     <Compile Include="Personne.cs" />
