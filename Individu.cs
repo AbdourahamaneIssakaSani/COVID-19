@@ -1,6 +1,6 @@
-ï»¿// File:    Citoyen.cs
+// File:    Citoyen.cs
 // Author:  Gaming VivoBook Pro
-// Created: mercredi 2 dï¿½cembre 2020 17:51:35
+// Created: mercredi 2 décembre 2020 17:51:35
 // Purpose: Definition of Class Citoyen
 
 using System;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Collections.Generic;
 using COVID_19;
 
-/// il faut vï¿½rifier aussi sï¿½il a voyagï¿½ dans les 2 semaines prï¿½cï¿½dents la date actuelle, informations trï¿½s impotante pour les agents de santï¿½.
+/// il faut vérifier aussi s’il a voyagé dans les 2 semaines précédents la date actuelle, informations très impotante pour les agents de santé.
 public class Individu : Personne
 {
     private DateTime derniereDateVoyage;
@@ -18,14 +18,41 @@ public class Individu : Personne
         get { return derniereDateVoyage; }
         set { derniereDateVoyage = value; }
     }
+//HEAD:Individu.cs
     
     public Individu()
     {
         Identifiant = "Inconnu";
     }
+    public Individu(Individu individu)
+    {
+        this.Identifiant = individu.Identifiant;
+        this.Nom = individu.Nom;
+        this.Prenom = individu.Prenom;
+        this.Age = individu.Age;
+        this.Genre = individu.Genre;
+        this.Residence = individu.Residence;
+        this.DateVoyage = individu.DateVoyage;
+        this.LieuVisite = individu.LieuVisite;
+        this.Depistage = individu.Depistage;
+    }
+//=======
+//<<<<<<< HEAD
+   
+//=======
+    
+    public Citoyen()
+    {
+        Identifiant = "Inconnu";
+    }
+/*<<<<<<< HEAD
+>>>>>>> parent of cf81d45... test persistance -> SGBD
+=======
+>>>>>>> parent of cf81d45... test persistance -> SGBD
+>>>>>>> conflict:Citoyen.cs*/
     public bool AVoyage()
     {
-        //teste sï¿½il a voyagï¿½ dans les 14 derniers jours au moins
+        //teste s’il a voyagé dans les 14 derniers jours au moins
         if((DateTime.Now - derniereDateVoyage).TotalDays <= 14)
         {
             return true;

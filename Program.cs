@@ -20,6 +20,11 @@ namespace COVID_19
             CodeQR code = new CodeQR();
             dep.AddCodeQR(code);
             Ali.AddDepistage(dep);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> conflict
             
             Consultationenligne Visite = new Consultationenligne();
             Visite.traitements = new Traitement[10];
@@ -28,9 +33,17 @@ namespace COVID_19
             Visite.traitements[0].consultationenligneB = new Consultationenligne(Visite);
             Visite.traitements[0].Details = "Aucun traitement prescris";           
             Visite.traitements[0].estVaccine = false;
-            
+<<<<<<< HEAD
 
-            Console.ForegroundColor = ConsoleColor.Green;
+=======
+            
+<<<<<<< HEAD
+>>>>>>> parent of cf81d45... test persistance -> SGBD
+=======
+>>>>>>> parent of cf81d45... test persistance -> SGBD
+>>>>>>> conflict
+
+            /*Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("============Civilité============");
             Console.WriteLine("Nom:"+ Ali.Nom);           
             Console.WriteLine("Prénom:"+Ali.Prenom);           
@@ -48,6 +61,39 @@ namespace COVID_19
             Console.WriteLine("Code couleur :"+code.Etat);
             Console.WriteLine("Informations complémentaires :"+code.Details);
             
+<<<<<<< HEAD
+            Console.WriteLine("============Consultation en Ligne============");            
+            Console.WriteLine("Date de Consultation :" + Visite.Date.AddDays(-14));
+            Console.WriteLine("Observation du médecin :"+Visite.Avancement());
+            Console.WriteLine("\t=====Ordonnance=====");
+            Console.WriteLine("Code Patient :" + Visite.traitements[0].codeQRA.ID);
+            Console.WriteLine("Date:"+Visite.traitements[0].DateOrdonnance.AddDays(-14));
+            Console.WriteLine("Prescription:"+Visite.traitements[0].Details);
+            Console.WriteLine("Est-il vacciné:"+Visite.traitements[0].estVaccine);
+            
+            Console.WriteLine("============Consultation en Ligne 2============");
+            Visite.traitements[1] = new Traitement();
+            Visite.traitements[1].codeQRA = code;
+            Visite.traitements[1].consultationenligneB = Visite;
+            Visite.traitements[1].Details = "Confinement recommandé";
+            Visite.traitements[1].estVaccine = true;
+
+            Console.WriteLine("\t=====Ordonnance=====");
+            Console.WriteLine("Code Patient :" + Visite.traitements[1].codeQRA.ID);
+            Console.WriteLine("Date:" + Visite.traitements[1].DateOrdonnance);
+            Console.WriteLine("Prescription:" + Visite.traitements[1].Details);
+            Console.WriteLine("Est-il vacciné:" + Visite.traitements[1].estVaccine);*/
+            
+            persistance AddAli = new persistance(Ali);
+            AddAli.Insert();
+            
+
+=======
+<<<<<<< HEAD
+            Console.WriteLine("============État sanitaire============");
+>>>>>>> conflict
+
+=======
             Console.WriteLine("============Consultation en Ligne============");            
             Console.WriteLine("Date de Consultation :" + Visite.Date.AddDays(-14));
             Console.WriteLine("Observation du médecin :"+Visite.Avancement());
@@ -70,6 +116,10 @@ namespace COVID_19
             Console.WriteLine("Prescription:" + Visite.traitements[1].Details);
             Console.WriteLine("Est-il vacciné:" + Visite.traitements[1].estVaccine);
             
+<<<<<<< HEAD
+>>>>>>> parent of cf81d45... test persistance -> SGBD
+=======
+>>>>>>> parent of cf81d45... test persistance -> SGBD
             Console.ReadLine();
         }
     }
