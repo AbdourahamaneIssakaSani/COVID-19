@@ -23,18 +23,6 @@ public class Individu : Personne
     {
         Identifiant = "Inconnu";
     }
-    public Citoyen(Citoyen citoyen)
-    {
-        this.Identifiant = citoyen.Identifiant;
-        this.Nom = citoyen.Nom;
-        this.Prenom = citoyen.Prenom;
-        this.Age = citoyen.Age;
-        this.Genre = citoyen.Genre;
-        this.Residence = citoyen.Residence;
-        this.DateVoyage = citoyen.DateVoyage;
-        this.LieuVisite = citoyen.LieuVisite;
-        this.Depistage = citoyen.Depistage;
-    }
     public bool AVoyage()
     {
         //teste s�il a voyag� dans les 14 derniers jours au moins
