@@ -11,5 +11,7 @@ Fès, Maroc
 ![Diagramme des Classes](https://github.com/Abdourahamane709/COVID-19/blob/main/diagramme-classes.png)
 ### Diagramme États-Transitions
 ![Diagramme États-Transitions](https://github.com/Abdourahamane709/COVID-19/blob/main/conception-etat.png)
+### Diagramme des Cas d’utilisation
+![Diagramme des Cas d’utilisation](https://github.com/Abdourahamane709/COVID-19/blob/main/diagramme-cas.png)
 ### Modèle Conceptuel des Données
 ![Modèle Conceptuel des Données](https://github.com/Abdourahamane709/COVID-19/blob/main/mcd.png)
